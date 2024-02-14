@@ -49,7 +49,7 @@ export const deleteMonster = async (req, res) => {
     if (monster) {
       res.status(204).send();
     } else {
-      res.status(404).send(`${e.message}: failed to delete monster ${id}`); // !What does this do find test case
+      res.status(404).send(`${e.message}: failed to delete monster ${id}`);
     }
   } catch (e) {
     res
