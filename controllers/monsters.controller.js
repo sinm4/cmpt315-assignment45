@@ -18,7 +18,7 @@ export const getMonster = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const monster = await getMonstersFromRepository({ _id: id }); // { id: id }
+    const monster = await getMonstersFromRepository({ _id: id });
     res.status(200).send(monster);
   } catch (e) {
     res

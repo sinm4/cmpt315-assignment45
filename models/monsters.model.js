@@ -1,11 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- * TODO: Data validation:
- * TODO: - Include input validation for create and update operations.
- * TODO: - Check for missing or incorrect data and respond with appropriate messages.
- */
-
 const MonsterSchema = new mongoose.Schema({
   id: { type: Number, required: true }, // auto-increment based on last indexed monster id
   name: { type: String, required: true },
