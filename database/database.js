@@ -2,11 +2,9 @@ import mongoose from "mongoose";
 
 mongoose.set("strictQuery", true);
 
-const username = process.env.username;
-const password = process.env.password;
-
 export const connectDB = async () => {
-  const url = `mongodb+srv://${username}:${password}@cluster0.2xmtyoe.mongodb.net/cmpt315assignment45`;
+  const url =
+    "mongodb+srv://sinm4:zRfeyBnBMVsQ5GID@cluster0.2xmtyoe.mongodb.net/";
 
   try {
     const connection = await mongoose.connect(url, {
